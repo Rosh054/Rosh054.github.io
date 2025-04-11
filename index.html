@@ -112,6 +112,35 @@
             width: 80%;
             border-radius: 10px;
         }
+        .testimonials {
+            padding: 40px 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+        .testimonials h2 {
+            margin-bottom: 30px;
+        }
+        .testimonial-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        .testimonial {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+            font-style: italic;
+        }
+        .testimonial p {
+            margin-bottom: 10px;
+        }
+        .testimonial span {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
         footer {
             text-align: center;
             padding: 20px;
@@ -157,6 +186,7 @@
     <section class="genres">
         <h2>Explore by Genre</h2>
         <div class="genre-list">
+            <!-- Genre items -->
             <div class="genre-item">
                 <img src="pop.jpg" alt="Pop">
                 <p>Pop</p>
@@ -254,6 +284,24 @@
         </video>
     </section>
 
+    <section class="testimonials">
+        <h2>What Our Users Say</h2>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <p>"Spotify changed the way I listen to music. I love how it knows exactly what I want to hear!"</p>
+                <span>- Alex J.</span>
+            </div>
+            <div class="testimonial">
+                <p>"The playlists are spot on, and the sound quality is incredible. Can't live without it."</p>
+                <span>- Maria G.</span>
+            </div>
+            <div class="testimonial">
+                <p>"From workouts to chill evenings, Spotify is my go-to app for every mood."</p>
+                <span>- Liam T.</span>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <p>&copy; 2025 Spotify. All rights reserved.</p>
     </footer>
@@ -273,5 +321,3 @@
     </script>
 </body>
 </html>
-
-
