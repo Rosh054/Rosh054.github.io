@@ -59,8 +59,29 @@
             border: none;
             width: 200px;
         }
+        .genres {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .genres h2 {
+            margin-bottom: 20px;
+        }
+        .genre-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .genre-item {
+            padding: 10px 20px;
+            background-color: #1DB954;
+            border-radius: 20px;
+            cursor: pointer;
+            color: white;
+        }
         .features {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             gap: 40px;
             padding: 40px 20px;
@@ -75,6 +96,9 @@
         .feature img {
             width: 100%;
             border-radius: 10px;
+        }
+        .audio-preview {
+            margin-top: 10px;
         }
         .video {
             text-align: center;
@@ -109,7 +133,7 @@
         <p>Stream millions of songs ad-free, anywhere, anytime.</p>
         <button onclick="showAlert()">Get Started</button>
     </section>
-    
+
     <section class="search">
         <input type="text" placeholder="Search for songs, artists..." id="searchField">
         <select id="genreFilter">
@@ -125,27 +149,77 @@
         </select>
         <button onclick="applyFilters()">Apply</button>
     </section>
-    
+
+    <section class="genres">
+        <h2>Explore by Genre</h2>
+        <div class="genre-list">
+            <div class="genre-item">Pop</div>
+            <div class="genre-item">Rock</div>
+            <div class="genre-item">Hip-Hop</div>
+            <div class="genre-item">Jazz</div>
+            <div class="genre-item">Classical</div>
+            <div class="genre-item">Electronic</div>
+            <div class="genre-item">Country</div>
+            <div class="genre-item">Reggae</div>
+            <div class="genre-item">Blues</div>
+            <div class="genre-item">Metal</div>
+        </div>
+    </section>
+
     <section class="features">
         <div class="feature">
             <img src="music1.jpg" alt="Music">
             <h2>Unlimited Access</h2>
             <p>Enjoy unlimited access to millions of songs.</p>
+            <div class="audio-preview">
+                <audio controls>
+                    <source src="preview1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
         </div>
         <div class="feature">
             <img src="music2.jpg" alt="Playlist">
             <h2>Personalized Playlists</h2>
             <p>Create and share playlists effortlessly.</p>
+            <div class="audio-preview">
+                <audio controls>
+                    <source src="preview2.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+        <div class="feature">
+            <img src="music3.jpg" alt="Chill Vibes">
+            <h2>Chill Vibes</h2>
+            <p>Relax and unwind with curated chill tracks.</p>
+            <div class="audio-preview">
+                <audio controls>
+                    <source src="preview3.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+        <div class="feature">
+            <img src="music4.jpg" alt="Workout Mix">
+            <h2>Workout Mix</h2>
+            <p>Pump up your energy with high-intensity hits.</p>
+            <div class="audio-preview">
+                <audio controls>
+                    <source src="preview4.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
         </div>
     </section>
-    
+
     <section class="video">
         <h2>See How It Works</h2>
         <video controls>
             <source src="spotify_ad.mp4" type="video/mp4">
         </video>
     </section>
-    
+
     <footer>
         <p>&copy; 2025 Spotify. All rights reserved.</p>
     </footer>
